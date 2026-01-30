@@ -1,0 +1,35 @@
+SCRIPTS PARA CORRER EL PROGRAMA MUY IMPORTANTES:
+
+PRIMERO CORRER ESTO PARA ACTIVAR EL ESPACIO VIRTUAL
+.\venv\Scripts\activate
+
+CORRER ESTO EN LA TERMINAL EN CASO DE NO TENER INSTALADAS LAS LIBRERIAS
+pip install streamlit pandas yfinance ta xlsxwriter openpyxl
+
+CORRER EL ARCHIVO
+streamlit run app_investing_style.py
+
+EN CASO DE ERROR DE EXECUTION POLICY CORRER
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+NOTA IMPORTANTE:
+Si cambias el nombre de la carpeta del proyecto o la mueves, el entorno virtual (venv) dejará de funcionar.
+Solución: Borra la carpeta 'venv', crea una nueva con "python -m venv venv" y reinstala las librerías.
+
+PASOS SI PASA ESO (CORRER EN ORDEN EN LA TERMINAL):
+
+1.
+Remove-Item -Path ".venv" -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "venv" -Recurse -Force -ErrorAction SilentlyContinue
+
+2.
+python -m venv venv
+
+3.
+.\venv\Scripts\activate
+
+4.
+pip install streamlit pandas yfinance ta xlsxwriter openpyxl
+
+5:
+streamlit run app_investing_style.py

@@ -1,0 +1,7 @@
+venv/
+.venv/
+__pycache__/
+*.xlsx
+*.json
+.streamlit/
+!email_config.json
